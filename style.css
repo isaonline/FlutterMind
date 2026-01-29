@@ -19,6 +19,8 @@
     --spacing-80: 80px;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,35 +29,92 @@
 }
 
 body {
-    background-color: var(--darkest-lillac);
+    background: linear-gradient(
+    50deg,
+    var(--dark-purple),
+    var(--flutter),
+    var(--darkest-lillac)
+    );
+    background-size: 300% 300%;
+    animation: mymove 6s ease infinite;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-66);
 }
 
-nav > a {
+@keyframes mymove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+    color: var(--dark-purple);
+}
+
+h3 {
+    color: var(--darkest-lillac);
+    margin-top: var(--spacing-24);
+}
+
+strong {
+    color: var(--flutter);
+}
+
+p {
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-66);
+    width: 100vw;
+    top: 0;
+    position: sticky;
     background-color: var(--light-purple);
+    padding: var(--spacing-16);
+}
+
+nav > div.links {
+    color: var(--dark-purple);
+    font-weight: 900;
+    font-size: var(--spacing-16);
+}
+
+div.links > a {
     text-decoration: none;
     color: var(--dark-purple);
-    margin: var(--spacing-24);
-    padding: var(--spacing-16);
-    border-radius: var(--spacing-8);
+    margin-left: var(--spacing-8);
 }
 
-main#card {
+main {
+    height: 100%;
+}
+
+section#card {
     background-color: var(--light-purple);
     display: flex;
     overflow: hidden;
     border-radius: var(--spacing-16);
-    width: 1200px;
-    margin: var(--spacing-66);
+    width: 1100px;
+    height: 40em;
+    margin: var(--spacing-80);
 }
 
-main#card > img {
+section#card > img {
     width: 500px;
     opacity: 70%;
+    object-fit: cover;
 }
 
 #login {
@@ -64,6 +123,12 @@ main#card > img {
 
 #login > form {
     padding: var(--spacing-24) 0;
+    margin: var(--spacing-32) 0;
+}
+
+form > label {
+    font-weight: 600;
+    color: var(--darkest-lillac);
 }
 
 input#user, #pass {
@@ -85,21 +150,25 @@ input.buttons {
     background-color: var(--dark-purple);
     color: var(--light-purple);
     width: 230px;
-    height: var(--spacing-32);
+    height: var(--spacing-40);
     border-radius: var(--spacing-8);
     display: flex;
     flex-flow: column nowrap;
+    font-weight: 600;
+    font-size: var(--spacing-16);
+    margin-top: var(--spacing-32);
 }
 
 footer {
     background-color: var(--light-purple);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: var(--spacing-66);
     align-items: center;
-    width: 1200px;
-    height: var(--spacing-80);
-    border-radius: var(--spacing-16);
-    padding: 0 var(--spacing-66);
+    padding: var(--spacing-16);
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 footer > img {
