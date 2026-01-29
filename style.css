@@ -1,0 +1,21 @@
+:root {
+    --light-purple: #F2EBFF;
+    --lillac: #E3CAED;
+    --lavender: #D5ADFF;
+    --wonders: #C68BEE;
+    --flutter: #916DD5;
+    --dark-purple: #7151A9;
+    --nighttime: #33213B;
+    --darkest-lillac: #110E16;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkest-lillac);
+}
+

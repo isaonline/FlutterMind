@@ -1,0 +1,2 @@
+# FlutterMind
+Plataforma Educacional Tecnológica
