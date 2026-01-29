@@ -17,15 +17,17 @@
     </header>
     <main id="card">
         <img src="img/photo.png" alt="Foto pixelada de fadas e elfas em um bar">
-        <div>
+        <div id="login">
             <h1>Preencha seus dados para entrar</h1>
-            <form action="" method="post">
-                <label for="user">Nome de Usuário:</label>
+            <form action="data/userdata.php" method="post">
+                <label for="user">Nome de Usuário:</label> <br>
                 <input type="text" name="user" id="user"> <br>
-                <label for="pass">Senha:</label>
+                <label for="pass">Senha:</label> <br>
                 <input type="password" name="pass" id="pass"><br>
-                <input type="submit" value="Entrar">
-                <input type="button" value="Esqueci a senha">
+                <fieldset id="enter">
+                    <input class="buttons" type="submit" value="Entrar">
+                    <input class="buttons" type="button" value="Esqueci a senha">
+                </fieldset>
             </form>
         </div>
     </main>

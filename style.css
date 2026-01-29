@@ -13,6 +13,7 @@
     --spacing-16: 16px;
     --spacing-24: 24px;
     --spacing-32: 32px;
+    --spacing-40: 40px;
     --spacing-66: 66px;
     --spacing-72: 72px;
     --spacing-80: 80px;
@@ -55,6 +56,39 @@ main#card {
 main#card > img {
     width: 500px;
     opacity: 70%;
+}
+
+#login {
+    padding: var(--spacing-80);
+}
+
+#login > form {
+    padding: var(--spacing-24) 0;
+}
+
+input#user, #pass {
+    width: 500px;
+    height: var(--spacing-32);
+    margin: var(--spacing-16) 0;
+    border: 0;
+    border-radius: var(--spacing-8);
+}
+
+fieldset#enter {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+input.buttons {
+    border: none;
+    background-color: var(--dark-purple);
+    color: var(--light-purple);
+    width: 230px;
+    height: var(--spacing-32);
+    border-radius: var(--spacing-8);
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 footer {
