@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="menu">
         <nav>
             <a href="about.html"><i class="fa-solid fa-scroll"></i></a>
             <a href="faq.html"><i class="fa-solid fa-circle-question"></i></a>
@@ -15,21 +15,23 @@
             <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
         </nav>
     </header>
-    <main>
-        <img src="photo.png" alt="Foto pixelada de fadas e elfas em um bar">
+    <main id="card">
+        <img src="img/photo.png" alt="Foto pixelada de fadas e elfas em um bar">
         <div>
             <h1>Preencha seus dados para entrar</h1>
-            <label for="user">Nome de Usuário:</label>
-            <input type="text" name="user" id="user"> <br>
-            <label for="pass">Senha:</label>
-            <input type="password" name="pass" id="pass"><br>
-            <input type="submit" value="Entrar">
-            <input type="submit" value="Esqueci a senha">
+            <form action="" method="post">
+                <label for="user">Nome de Usuário:</label>
+                <input type="text" name="user" id="user"> <br>
+                <label for="pass">Senha:</label>
+                <input type="password" name="pass" id="pass"><br>
+                <input type="submit" value="Entrar">
+                <input type="button" value="Esqueci a senha">
+            </form>
         </div>
     </main>
     <footer>
         <p>Todos os direitos reservados - Flutter Mind 2026</p>
-        <img src="logofluttermind.svg" alt="Logo Flutter Mind">
+        <img src="img/logofluttermind.svg" alt="Logo Flutter Mind">
     </footer>
     <script src="https://kit.fontawesome.com/025f57babc.js" crossorigin="anonymous"></script>
 </body>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
     --light-purple: #F2EBFF;
     --lillac: #E3CAED;
@@ -7,15 +9,65 @@
     --dark-purple: #7151A9;
     --nighttime: #33213B;
     --darkest-lillac: #110E16;
+    --spacing-8: 8px;
+    --spacing-16: 16px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-66: 66px;
+    --spacing-72: 72px;
+    --spacing-80: 80px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "KoHo", sans-serif;
 }
 
 body {
     background-color: var(--darkest-lillac);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-66);
 }
 
+nav > a {
+    background-color: var(--light-purple);
+    text-decoration: none;
+    color: var(--dark-purple);
+    margin: var(--spacing-24);
+    padding: var(--spacing-16);
+    border-radius: var(--spacing-8);
+}
+
+main#card {
+    background-color: var(--light-purple);
+    display: flex;
+    overflow: hidden;
+    border-radius: var(--spacing-16);
+    width: 1200px;
+    margin: var(--spacing-66);
+}
+
+main#card > img {
+    width: 500px;
+    opacity: 70%;
+}
+
+footer {
+    background-color: var(--light-purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: var(--spacing-80);
+    border-radius: var(--spacing-16);
+    padding: 0 var(--spacing-66);
+}
+
+footer > img {
+    width: 120px;
+}
